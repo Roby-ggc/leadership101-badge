@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080d35">
+  <title>LEADERSHIP 101 — Mon badge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand-mark">L<span>101</span></div>
+    <div>
+      <p class="eyebrow">FORMATION EN LIGNE</p>
+      <h1>LEADERSHIP <span>101</span></h1>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <p class="eyebrow">ÉDITION 2026</p>
+      <h2>Affirme ta présence.</h2>
+      <p>Personnalise ton badge et partage ta participation à Leadership 101.</p>
+    </section>
+
+    <section class="workspace">
+      <div class="preview-panel">
+        <div class="panel-heading">
+          <span>APERÇU DU BADGE</span>
+          <span class="live-dot">● EN DIRECT</span>
+        </div>
+        <div class="poster" id="poster">
+          <div class="glow glow-one"></div>
+          <div class="glow glow-two"></div>
+          <div class="poster-content">
+            <div class="flyer-frame">
+              <img id="flyerPreview" src="images/flyer.jpg"
+                   alt="Flyer officiel de Leadership 101">
+              <div class="flyer-placeholder" id="flyerPlaceholder">
+                <span>LEADERSHIP 101</span>
+                <p>Ajoute ton flyer dans le dossier images</p>
+                <small>flyer.jpg ou flyer.png</small>
+              </div>
+            </div>
+
+            <div class="participant">
+              <div class="portrait">
+                <img id="portraitPreview" alt="Photo du participant" hidden>
+                <div class="portrait-placeholder" id="portraitPlaceholder">
+                  <span>+</span>
+                  <small>TA PHOTO</small>
+                </div>
+              </div>
+              <p class="participant-label">PARTICIPANT</p>
+              <h3 id="namePreview">TON NOM ICI</h3>
+              <div class="gold-line"></div>
+              <p class="script-text">J’y serai !</p>
+            </div>
+          </div>
+          <div class="poster-footer">LES BASES D’UN LEADERSHIP TRANSFORMATIONNEL ET PERSONNEL</div>
+        </div>
+        <p class="preview-note">Aperçu indicatif — ton flyer complet sera conservé dans le cadre.</p>
+      </div>
+
+      <aside class="editor">
+        <div class="panel-heading">PERSONNALISE TON BADGE</div>
+
+        <label class="field-label" for="photoInput">01 — Ta photo</label>
+        <label class="upload-zone" for="photoInput">
+          <span class="upload-icon">↑</span>
+          <strong>Choisir une photo</strong>
+          <small>JPG, PNG ou WebP</small>
+        </label>
+        <input id="photoInput" type="file" accept="image/*" hidden>
+
+        <label class="field-label" for="nameInput">02 — Ton nom</label>
+        <input id="nameInput" type="text" maxlength="60"
+               placeholder="Ex. : Robert Madjougoura">
+
+        <div class="tip">
+          <span>✦</span>
+          <p>Pour un meilleur résultat, choisis une photo nette, avec le visage bien visible.</p>
+        </div>
+
+        <button id="downloadBtn" class="primary-btn">Télécharger mon badge <span>↗</span></button>
+        <button id="shareBtn" class="secondary-btn">Partager mon badge</button>
+        <p id="status" class="status" aria-live="polite"></p>
+        <p class="privacy">Tes photos restent sur ton appareil. Aucun compte n’est nécessaire.</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer>LEADERSHIP 101 <span>•</span> GRANDIS. INSPIRE. IMPACTE.</footer>
+  <script src="script.js"></script>
+</body>
+</html>
